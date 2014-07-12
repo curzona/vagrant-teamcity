@@ -1,0 +1,15 @@
+#!/bin/sh
+# /etc/init.d/teamcity-agent -  startup script for teamcity
+
+case $1 in
+start)
+ start-stop-daemon --start  -c www-data --exec /opt/teamcity-agent/bin/agent.sh start
+;;
+
+stop)
+ start-stop-daemon --start -c www-data  --exec  /opt/teamcity-agent/bin/agent.sh stop
+;;
+
+esac
+
+exit 0

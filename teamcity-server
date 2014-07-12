@@ -1,0 +1,16 @@
+#!/bin/sh
+# /etc/init.d/teamcity-server -  startup script for teamcity
+export TEAMCITY_DATA_PATH="/var/teamcity-server/.BuildServer"
+
+case $1 in
+start)
+ start-stop-daemon --start  -c www-data --exec /opt/teamcity-server/bin/teamcity-server.sh start
+;;
+
+stop)
+ start-stop-daemon --start -c www-data  --exec  /opt/teamcity-server/bin/teamcity-server.sh stop
+;;
+
+esac
+
+exit 0
