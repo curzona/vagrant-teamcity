@@ -2,8 +2,8 @@ apt-get -y update
 apt-get -y install vim curl nmap tree zip htop upstart 
 apt-get -y install openjdk-7-jre-headless
 
-wget http://download.jetbrains.com/teamcity/TeamCity-8.1.3.tar.gz
-tar -zxf TeamCity-8.1.3.tar.gz
+wget http://download-cf.jetbrains.com/teamcity/TeamCity-9.0.2.tar.gz
+tar -zxf TeamCity-9.0.2.tar.gz
 mv TeamCity /opt/teamcity-server
 chown -R www-data /opt/teamcity-server
 mkdir /var/teamcity-server
