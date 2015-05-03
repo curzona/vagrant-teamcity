@@ -18,7 +18,7 @@ update-rc.d teamcity-server defaults
 #unzip buildAgent.zip -d buildAgent
 #mv buildAgent /opt/teamcity-agent
 cp -R /opt/teamcity-server/buildAgent /opt/teamcity-agent
-chmod +x /opt/teamcity-agent/agent.sh
+chmod +x /opt/teamcity-agent/bin/agent.sh
 chown -R www-data /opt/teamcity-agent
 mkdir /var/teamcity-agent
 chown -R www-data /var/teamcity-agent
